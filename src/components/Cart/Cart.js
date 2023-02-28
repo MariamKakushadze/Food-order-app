@@ -1,3 +1,5 @@
+import Modal from "../UI/Modal";
+
 const Cart = (props) => {
   const cartItems = (
     <ul className="overflow-auto list-none m-0 p-0 max-h-[20rem]">
@@ -8,7 +10,7 @@ const Cart = (props) => {
   );
 
   return (
-    <div>
+    <Modal>
       {cartItems}
       <div className="flex justify-between align-middle font-bold text-[1.5rem] my-4">
         <span>Total Amount</span>
@@ -22,7 +24,7 @@ const Cart = (props) => {
           Order
         </button>
       </div>
-    </div>
+    </Modal>
   );
 };
 
