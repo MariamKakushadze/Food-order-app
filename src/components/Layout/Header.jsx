@@ -7,7 +7,7 @@ const Header = (props) => {
     <>
       <header className="fixed top-0 left-0 w-[100%] h-20 bg-[#b55c6b] text-white flex justify-between align-middle content-center flex-wrap text-center px-[10%] z-10 shadow-sm shadow-pink-300">
         <h1 className="pt-2">ReactMeals</h1>
-        <HeaderBtn />
+        <HeaderBtn onClick={props.openCartHandler} />
       </header>
       <div className="w-[100%] h-80 z-0 overflow-hidden">
         <img

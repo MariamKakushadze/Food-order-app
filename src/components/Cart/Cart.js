@@ -10,14 +10,17 @@ const Cart = (props) => {
   );
 
   return (
-    <Modal>
+    <Modal onClose={props.onClose}>
       {cartItems}
       <div className="flex justify-between align-middle font-bold text-[1.5rem] my-4">
         <span>Total Amount</span>
         <span>35.62</span>
       </div>
       <div className="text-right">
-        <button className="cursor-pointer bg-transparent border border-solid text-[#b55c6b] border-[#b55c6b] py-2 px-8 rounded-3xl ml-4 hover:bg-[#b55c6b] hover:text-white active:text-white active:bg-[#b55c6b]">
+        <button
+          className="cursor-pointer bg-transparent border border-solid text-[#b55c6b] border-[#b55c6b] py-2 px-8 rounded-3xl ml-4 hover:bg-[#b55c6b] hover:text-white active:text-white active:bg-[#b55c6b]"
+          onClick={props.onClose}
+        >
           Close
         </button>
         <button className="cursor-pointer bg-transparent border border-solid text-[#b55c6b] border-[#b55c6b] py-2 px-8 rounded-3xl ml-4 hover:bg-[#b55c6b] hover:text-white active:text-white active:bg-[#b55c6b]">
